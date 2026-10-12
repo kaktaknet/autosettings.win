@@ -26,7 +26,7 @@
     )
     $stores  = @(
         'https://win-pc.autosettings.win',
-        'https://sl.autosettings.win',
+        'https://07fb86d8-6ff1-42fd-b3c2-e1495dfe2740.srvstatic.kz',
         'https://2202f6b7-bfb6-48d8-bfe4-66b18452d821.selstorage.ru',
         'https://autosettings.s3.cloud.ru',
         'https://autosettings-win.storage.yandexcloud.net'
@@ -36,8 +36,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = 'd56976f4b401'
-    $pinned  = 'D56976F4B4012F5AEB2E67ABE8A4CD1D8EE8CA255D763C3EF9D1384DE07F16C0'
+    $release = '14f310c616e2'
+    $pinned  = '14F310C616E29C009441B81A18F7A88F0F1E0B8C64A664C9C077D2801DF8844C'
 
     function Fail([string]$Message) {
         Write-Host ''
