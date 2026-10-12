@@ -5,7 +5,8 @@
 #               no hidden behavior. This is not malware; it does not deceive, and nothing here is
 #               designed to hack, exploit, or gain access to anything.
 # network:      Downloads ONLY the release files, from autosettings.win hosts and from the project's
-#               own public storage buckets (Selectel, Cloud.ru, Yandex Cloud, Cloudflare R2) listed below. The same
+#               own public storage buckets (Selectel, Cloud.ru, Yandex Cloud, Cloudflare R2) and its public
+#               GitHub repository (github.com/kaktaknet/autosettings.win), all listed below. The same
 #               bytes lie on every host; each file is checked against a pinned SHA-256 (below) before
 #               it is used, so no host is trusted. No data is sent out, ever.
 # elevation:    This loader and the menu run as the normal user - NOT elevated. Standard Windows UAC
@@ -19,7 +20,10 @@
 
 & {
     $base    = 'https://get.autosettings.win'
-    $distant = 'https://cf.autosettings.win'
+    $distant = @(
+        'https://cf.autosettings.win',
+        'https://raw.githubusercontent.com/kaktaknet/autosettings.win/main'
+    )
     $stores  = @(
         'https://win-pc.autosettings.win',
         'https://sl.autosettings.win',
@@ -29,7 +33,7 @@
     )
     $mirrors = New-Object Collections.ArrayList
     foreach ($store in ($stores | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
-    [void]$mirrors.Add($distant)
+    foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
     $release = 'd56976f4b401'
