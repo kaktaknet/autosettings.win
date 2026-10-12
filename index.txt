@@ -36,8 +36,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = '14f310c616e2'
-    $pinned  = '14F310C616E29C009441B81A18F7A88F0F1E0B8C64A664C9C077D2801DF8844C'
+    $release = '5a267f1cf8df'
+    $pinned  = '5A267F1CF8DFAED6CCFD3DB91A7D10F9183BCCAE6972E26D31FBD4DBBE607529'
 
     function Fail([string]$Message) {
         Write-Host ''
@@ -63,14 +63,22 @@
 
     try { [Net.ServicePointManager]::SecurityProtocol = 3072 } catch {}
 
-    function Get-Bytes([string]$Url) {
+    function Get-Bytes([string]$Url, [long]$Limit) {
         $request = [Net.WebRequest]::Create($Url)
         $request.Timeout = 15000
         $request.ReadWriteTimeout = 15000
         $response = $request.GetResponse()
         try {
+            if ($response.ContentLength -gt $Limit) { throw "answer of $($response.ContentLength) bytes, at most $Limit expected" }
+            $stream = $response.GetResponseStream()
             $buffer = New-Object IO.MemoryStream
-            $response.GetResponseStream().CopyTo($buffer)
+            $piece = New-Object byte[] 65536
+            while ($true) {
+                $read = $stream.Read($piece, 0, $piece.Length)
+                if ($read -le 0) { break }
+                $buffer.Write($piece, 0, $read)
+                if ($buffer.Length -gt $Limit) { throw "answer larger than $Limit bytes" }
+            }
             return ,$buffer.ToArray()
         }
         finally { $response.Close() }
@@ -81,7 +89,8 @@
             foreach ($mirror in @($mirrors)) {
                 $bytes = $null
                 $reason = $null
-                try { $bytes = Get-Bytes "$mirror/r/$release/$Name" }
+                $limit = if ($Size -gt 0) { $Size } else { 4MB }
+                try { $bytes = Get-Bytes "$mirror/r/$release/$Name" $limit }
                 catch {
                     $inner = $_.Exception
                     while ($inner.InnerException) { $inner = $inner.InnerException }
