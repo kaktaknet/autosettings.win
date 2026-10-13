@@ -17,6 +17,9 @@
 #               and Windows Terminal font. Each is snapshotted first and can be reverted from the menu.
 # reversible:   A snapshot is taken BEFORE any change; the menu's "restore" returns the prior values.
 # source:       https://autosettings.win - code is plain, human-readable, and not obfuscated.
+# license:      Apache-2.0 (SPDX-License-Identifier: Apache-2.0). Copyright 2026 kaktak.net.
+#               Redistribution must keep this notice and the LICENSE and NOTICE files:
+#               https://github.com/kaktaknet/autosettings.win
 
 & {
     $base    = 'https://get.autosettings.win'
@@ -36,8 +39,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = 'f033b2ea064f'
-    $pinned  = 'F033B2EA064F2A0DFBA40793CD221FBD85C6E30B9C6CBA7B1CA1DF47187E0AC6'
+    $release = '1f0ae971a85e'
+    $pinned  = '1F0AE971A85EB6464D56E4C70AF12BC74EF066ACF4FC798B03507F7F80EB6458'
 
     function Fail([string]$Message) {
         Write-Host ''
