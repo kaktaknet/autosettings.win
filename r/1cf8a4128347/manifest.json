@@ -1,0 +1,92 @@
+{
+  "entry": "menu.ps1",
+  "files": [
+    {
+      "name": "menu.ps1",
+      "sha256": "06E40171668F33FDE50DF64997959D08EDAB94A920BFD76424A169A1FCE325CA",
+      "size": 11605
+    },
+    {
+      "name": "lib.ps1",
+      "sha256": "BD5BE90A931288CEAF24005384A5E6B574683D842E48A6DA0998E036DEB74914",
+      "size": 32612
+    },
+    {
+      "name": "hklm-helper.ps1",
+      "sha256": "B18E8D0C1A1ABE6AB9AC2181DC7B29C052A1C72BF49F60B3D7C0038B95727DB5",
+      "size": 6577
+    },
+    {
+      "name": "ui.ps1",
+      "sha256": "456F27EA1F6B3B1BA4DA2A2BD7D366EEFA7061C0214B8DFE89A26444E886FE1E",
+      "size": 6050
+    },
+    {
+      "name": "terminal.ps1",
+      "sha256": "07FAB872EA1E32F67084CB70283FF6230069F8B1A986AE3ED8F05F2D34F55F06",
+      "size": 19101
+    },
+    {
+      "name": "aiterm.ps1",
+      "sha256": "206AC29B9B36D8ECF8D08AE2CB8DD0AD45F5BAF72DA80725CADE42BFFF113F9C",
+      "size": 15424
+    },
+    {
+      "name": "wsl.ps1",
+      "sha256": "2FADDD14419F339C78EDF73775D9831B4B0EDCB3D40FAC46CF72D6C6CE377011",
+      "size": 2859
+    },
+    {
+      "name": "devtools.ps1",
+      "sha256": "16D112B24E69E1BC4FAE897A2C7AB3F8FDC8CAF8E30F8802356D9DD286407A65",
+      "size": 10541
+    },
+    {
+      "name": "certs.ps1",
+      "sha256": "79725555C8194CA498BC08FCF0151DD93571E4384CD9B0C04EAD326C927C53E6",
+      "size": 32935
+    },
+    {
+      "name": "strings.ps1",
+      "sha256": "58AFBA58AA81C1E8163BCA34A890BD3D36BDB3AE76122F2D5C7B5D4F8BDA5C62",
+      "size": 31326
+    },
+    {
+      "name": "yandex-net.ps1",
+      "sha256": "58D9F025CF0998A406ACF6488E57958AAA1DC65BD2632E91D727E210C5DE156E",
+      "size": 70233
+    },
+    {
+      "name": "settings.json",
+      "sha256": "AF1F6F3A226F155BDD055706106F70E67A0B929DF432C1DCDABE06FE3945D1AD",
+      "size": 57633
+    },
+    {
+      "name": "claude.omp.json",
+      "sha256": "28E0793BE5A10DD37D2570AF35D5B3AD7044B2A763C405A18133881A604E6C81",
+      "size": 11271
+    },
+    {
+      "name": "statusline-omp.py",
+      "sha256": "A3772424551BCF527DF0C8D6F77302075FB3FB2A3DAFD002777EB61195FA6EED",
+      "size": 6095
+    },
+    {
+      "name": "statusline-command.py",
+      "sha256": "AC9A5F08B4781CD1C7D7ADA7343889CC0E794116963922E54E7932182359F9DA",
+      "size": 10854
+    },
+    {
+      "name": "autosettings.profile.ps1",
+      "sha256": "A1348B227644EA0D91ADB04AE9BB991A9F68F7F55377BBC54B39DF70F941231C",
+      "size": 6549
+    },
+    {
+      "name": "kontur-certs.json",
+      "sha256": "807E1B45315050B34DD888384E19C872141CFADD54A69AB660E3888648CDA32E",
+      "size": 284645
+    }
+  ],
+  "payloads": [],
+  "modules": []
+}
