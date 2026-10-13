@@ -32,6 +32,12 @@ irm https://get.autosettings.win | iex
 
 В загрузчик вписана контрольная сумма SHA-256 описания выпуска, а в описании - суммы всех файлов. Файл с несовпавшей суммой не используется, откуда бы он ни пришёл. Поэтому выпуск раздаётся сразу с нескольких независимых хранилищ: если одно недоступно, загрузчик берёт файл со следующего.
 
+**Лицензия**
+
+Код распространяется по лицензии [Apache 2.0](LICENSE). Его можно читать, использовать, менять и распространять. Условие одно: сохранить указание автора - файлы `LICENSE` и `NOTICE` - и отметить, что изменено.
+
+© 2026 kaktak.net
+
 Подробности и справка: [autosettings.win](https://autosettings.win)
 
 ## English
@@ -63,5 +69,11 @@ The code is open and readable: not minified, not encrypted, no hidden parts. You
 **How integrity is checked**
 
 The loader carries the SHA-256 checksum of the release description, and the description carries the checksums of every file. A file whose checksum does not match is not used, wherever it came from. That is why the release is served from several independent storages at once: when one is unreachable, the loader takes the file from the next.
+
+**License**
+
+The code is distributed under the [Apache 2.0](LICENSE) license. You may read, use, change and redistribute it. One condition: keep the author's notice - the `LICENSE` and `NOTICE` files - and state what you changed.
+
+© 2026 kaktak.net
 
 Details and help: [autosettings.win](https://autosettings.win)
