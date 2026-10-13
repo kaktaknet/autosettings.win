@@ -1,0 +1,2507 @@
+{
+  "version": 1,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "categories": [
+    {
+      "id": "privacy-telemetry",
+      "title": {
+        "ru": "Телеметрия и диагностика",
+        "en": "Telemetry and diagnostics"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "privacy-input",
+      "title": {
+        "ru": "Ввод, речь, журнал действий",
+        "en": "Input, speech, activity history"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "privacy-ads",
+      "title": {
+        "ru": "Реклама и рекомендации",
+        "en": "Advertising and recommendations"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "privacy-ai",
+      "title": {
+        "ru": "Искусственный интеллект: Copilot и Recall",
+        "en": "AI: Copilot and Recall"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "privacy-apps",
+      "title": {
+        "ru": "Доступ приложений",
+        "en": "App permissions"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "system-search",
+      "title": {
+        "ru": "Поиск Windows",
+        "en": "Windows Search"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "system-remote",
+      "title": {
+        "ru": "Удалённый доступ к компьютеру",
+        "en": "Remote access to this PC"
+      },
+      "min_build": 15063
+    },
+    {
+      "id": "system-explorer",
+      "title": {
+        "ru": "Проводник и вид",
+        "en": "File Explorer and view"
+      },
+      "min_build": 10240
+    },
+    {
+      "id": "system-appearance",
+      "title": {
+        "ru": "Оформление",
+        "en": "Appearance"
+      },
+      "min_build": 14393
+    },
+    {
+      "id": "system-convenience",
+      "title": {
+        "ru": "Автозапуск и медиаплеер",
+        "en": "Autoplay and media player"
+      },
+      "min_build": 15063
+    }
+  ],
+  "settings": [
+    {
+      "id": "telemetry-allow-min",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Диагностические данные - минимальный уровень (политика)",
+        "en": "Diagnostic data - minimum level (policy)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection",
+      "name": "AllowTelemetry",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "telemetry-no-feedback",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Не показывать запросы отзывов Windows",
+        "en": "Do not show Windows feedback requests"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection",
+      "name": "DoNotShowFeedbackNotifications",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 1
+    },
+    {
+      "id": "telemetry-device-name",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Не отправлять имя устройства с диагностикой",
+        "en": "Do not send the device name with diagnostic data"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection",
+      "name": "AllowDeviceNameInDiagnosticData",
+      "type": "DWord",
+      "min_build": 17763,
+      "value": 0
+    },
+    {
+      "id": "telemetry-no-dataviewer",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Отключить просмотрщик диагностических данных",
+        "en": "Turn off the Diagnostic Data Viewer"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection",
+      "name": "DisableDiagnosticDataViewer",
+      "type": "DWord",
+      "min_build": 17763,
+      "value": 1
+    },
+    {
+      "id": "telemetry-no-wer",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Отключить отчёты об ошибках Windows (WER)",
+        "en": "Disable Windows Error Reporting (WER)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting",
+      "name": "Disabled",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 1
+    },
+    {
+      "id": "telemetry-no-tailored",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Отключить персонализацию на основе диагностики",
+        "en": "Turn off tailored experiences from diagnostic data"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Privacy",
+      "name": "TailoredExperiencesWithDiagnosticDataEnabled",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 0
+    },
+    {
+      "id": "telemetry-ceip",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Отключить программу улучшения качества ПО (CEIP)",
+        "en": "Turn off the Customer Experience Improvement Program (CEIP)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\SQMClient\\Windows",
+      "name": "CEIPEnable",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "telemetry-track-progs",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Не отслеживать запуски приложений",
+        "en": "Do not track app launches"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "Start_TrackProgs",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "telemetry-no-siuf",
+      "category": "privacy-telemetry",
+      "title": {
+        "ru": "Не запрашивать отзывы о работе системы",
+        "en": "Do not ask for feedback about the system"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Siuf\\Rules",
+      "name": "NumberOfSIUFInPeriod",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "input-no-linguistic",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Не отправлять рукописный и печатный ввод в Microsoft",
+        "en": "Do not send handwriting and typing data to Microsoft"
+      },
+      "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\TextInput",
+      "name": "AllowLinguisticDataCollection",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 0
+    },
+    {
+      "id": "input-no-implicit-text",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Выключить неявный сбор печатного ввода",
+        "en": "Turn off implicit text collection"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\InputPersonalization",
+      "name": "RestrictImplicitTextCollection",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1
+    },
+    {
+      "id": "input-no-implicit-ink",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Выключить неявный сбор рукописного ввода",
+        "en": "Turn off implicit ink collection"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\InputPersonalization",
+      "name": "RestrictImplicitInkCollection",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1
+    },
+    {
+      "id": "input-no-personalization",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Отключить персонализацию ввода (уровень устройства)",
+        "en": "Turn off input personalization (device level)"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\InputPersonalization",
+      "name": "AllowInputPersonalization",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "input-no-online-speech",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Отключить онлайн-распознавание речи (пользователь)",
+        "en": "Turn off online speech recognition (user)"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy",
+      "name": "HasAccepted",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "activity-no-feed",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Отключить ленту действий (Timeline)",
+        "en": "Turn off the Activity Feed (Timeline)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+      "name": "EnableActivityFeed",
+      "type": "DWord",
+      "min_build": 16299,
+      "value": 0
+    },
+    {
+      "id": "activity-no-publish",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Не публиковать действия пользователя",
+        "en": "Do not publish user activities"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+      "name": "PublishUserActivities",
+      "type": "DWord",
+      "min_build": 16299,
+      "value": 0
+    },
+    {
+      "id": "activity-no-upload",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Не выгружать действия в облако",
+        "en": "Do not upload user activities to the cloud"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+      "name": "UploadUserActivities",
+      "type": "DWord",
+      "min_build": 17134,
+      "value": 0
+    },
+    {
+      "id": "clipboard-no-crossdevice",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Не синхронизировать буфер обмена между устройствами",
+        "en": "Do not sync the clipboard across devices"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+      "name": "AllowCrossDeviceClipboard",
+      "type": "DWord",
+      "min_build": 17763,
+      "value": 0
+    },
+    {
+      "id": "clipboard-no-history",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Не хранить историю буфера обмена (ломает Win+V)",
+        "en": "Do not keep clipboard history (breaks Win+V)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+      "name": "AllowClipboardHistory",
+      "type": "DWord",
+      "min_build": 17763,
+      "value": 0,
+      "optional": true
+    },
+    {
+      "id": "sync-no-settingsync",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Отключить синхронизацию параметров Windows",
+        "en": "Turn off Windows settings sync"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\SettingSync",
+      "name": "DisableSettingSync",
+      "type": "DWord",
+      "min_build": 19041,
+      "value": 2
+    },
+    {
+      "id": "sync-no-override",
+      "category": "privacy-input",
+      "title": {
+        "ru": "Запретить повторное включение синхронизации параметров",
+        "en": "Prevent re-enabling settings sync"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\SettingSync",
+      "name": "DisableSettingSyncUserOverride",
+      "type": "DWord",
+      "min_build": 19041,
+      "value": 1
+    },
+    {
+      "id": "ads-advertising-id",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить рекламный идентификатор",
+        "en": "Turn off the advertising ID"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
+      "name": "Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-advertising-id-policy",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить рекламный идентификатор (политика устройства)",
+        "en": "Disable the advertising ID (device policy)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo",
+      "name": "DisabledByGroupPolicy",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 1
+    },
+    {
+      "id": "ads-start-suggestions",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать рекомендации в меню Пуск",
+        "en": "Remove suggestions in the Start menu"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SystemPaneSuggestionsEnabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-silent-apps",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Не устанавливать рекламные приложения автоматически",
+        "en": "Do not silently install promoted apps"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SilentInstalledAppsEnabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-settings-tips",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать советы и рекламу в Параметрах",
+        "en": "Remove tips and ads in Settings"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SubscribedContent-338393Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-welcome",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать экран приветствия после обновлений",
+        "en": "Remove the welcome experience after updates"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SubscribedContent-310093Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-start-tips",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить советы и подсказки Windows",
+        "en": "Turn off Windows tips and suggestions"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SubscribedContent-338389Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-start-suggestions2",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать предложения в меню Пуск",
+        "en": "Remove suggestions in the Start menu"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SubscribedContent-338388Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-soft-landing",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить всплывающие советы Windows",
+        "en": "Turn off Windows pop-up tips"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SoftLandingEnabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-lockscreen-tips",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать подсказки на экране блокировки",
+        "en": "Remove tips on the lock screen"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "SubscribedContent-338387Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-lockscreen-overlay",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать факты и подсказки Spotlight на экране блокировки",
+        "en": "Remove Spotlight facts and tips on the lock screen"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name": "RotatingLockScreenOverlayEnabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-start-iris",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить рекомендации в меню Пуск",
+        "en": "Turn off recommendations in the Start menu"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "Start_IrisRecommendations",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-scoobe",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать экран «Давайте закончим настройку»",
+        "en": "Remove the finish-setup screen"
+      },
+      "path": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\UserProfileEngagement",
+      "name": "ScoobeSystemSettingEnabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-sync-notif",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Убрать рекламу OneDrive в Проводнике",
+        "en": "Remove OneDrive ads in File Explorer"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "ShowSyncProviderNotifications",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ads-suggested-toast",
+      "category": "privacy-ads",
+      "title": {
+        "ru": "Отключить предлагаемые уведомления",
+        "en": "Turn off suggested notifications"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Notifications\\Settings\\Windows.SystemToast.Suggested",
+      "name": "Enabled",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ai-copilot-button",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Убрать кнопку Copilot с панели задач",
+        "en": "Remove the Copilot button from the taskbar"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "ShowCopilotButton",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "ai-recall-off",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Запретить включение Recall",
+        "en": "Block enabling Recall"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI",
+      "name": "AllowRecallEnablement",
+      "type": "DWord",
+      "min_build": 26100,
+      "value": 0
+    },
+    {
+      "id": "ai-recall-no-analysis",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Отключить анализ данных ИИ (снимки Recall)",
+        "en": "Turn off AI data analysis (Recall snapshots)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI",
+      "name": "DisableAIDataAnalysis",
+      "type": "DWord",
+      "min_build": 26100,
+      "value": 1
+    },
+    {
+      "id": "ai-no-clicktodo",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Отключить Click to Do (анализ содержимого экрана ИИ)",
+        "en": "Disable Click to Do (AI screen content analysis)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI",
+      "name": "DisableClickToDo",
+      "type": "DWord",
+      "min_build": 26100,
+      "value": 1
+    },
+    {
+      "id": "ai-paint-no-cocreator",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Отключить Cocreator в Paint (генеративный ИИ)",
+        "en": "Disable Cocreator in Paint (generative AI)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Paint",
+      "name": "DisableCocreator",
+      "type": "DWord",
+      "min_build": 22621,
+      "value": 1
+    },
+    {
+      "id": "ai-paint-no-imagecreator",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Отключить Image Creator в Paint (облачный ИИ)",
+        "en": "Disable Image Creator in Paint (cloud AI)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Paint",
+      "name": "DisableImageCreator",
+      "type": "DWord",
+      "min_build": 22621,
+      "value": 1
+    },
+    {
+      "id": "ai-paint-no-genfill",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Отключить генеративную заливку в Paint",
+        "en": "Disable generative fill in Paint"
+      },
+      "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Paint",
+      "name": "DisableGenerativeFill",
+      "type": "DWord",
+      "min_build": 22621,
+      "value": 1
+    },
+    {
+      "id": "ai-apps-no-generativeai",
+      "category": "privacy-ai",
+      "title": {
+        "ru": "Запретить приложениям доступ к генеративному ИИ",
+        "en": "Block app access to generative AI"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessGenerativeAI",
+      "type": "DWord",
+      "min_build": 26100,
+      "value": 2
+    },
+    {
+      "id": "app-no-location",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к геолокации",
+        "en": "Block app access to location"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\location",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-contacts",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к контактам",
+        "en": "Block app access to contacts"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\contacts",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-calendar",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к календарю",
+        "en": "Block app access to the calendar"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\appointments",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-callhistory",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к журналу звонков",
+        "en": "Block app access to call history"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\phoneCallHistory",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-email",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к почте",
+        "en": "Block app access to email"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\email",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-accountinfo",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к данным учётной записи",
+        "en": "Block app access to account info"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\userAccountInformation",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-tasks",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к задачам",
+        "en": "Block app access to tasks"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\userDataTasks",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-notifications",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к уведомлениям",
+        "en": "Block app access to notifications"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\userNotificationListener",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-messaging",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям доступ к сообщениям",
+        "en": "Block app access to messaging"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\chat",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-phone",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям совершать звонки",
+        "en": "Block apps from making phone calls"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\phoneCall",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-appdiag",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям диагностику других приложений",
+        "en": "Block app access to app diagnostics"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\appDiagnostics",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-radios",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям управление радиомодулями",
+        "en": "Block app control of radios"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\radios",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-bluetoothsync",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям синхронизацию по Bluetooth",
+        "en": "Block app Bluetooth sync"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\bluetoothSync",
+      "name": "Value",
+      "type": "String",
+      "min_build": 10240,
+      "value": "Deny"
+    },
+    {
+      "id": "app-no-background",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Запретить приложениям работу в фоне (ломает плитки, почту, уведомления)",
+        "en": "Block apps from running in the background (breaks tiles, mail, notifications)"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsRunInBackground",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 2,
+      "optional": true
+    },
+    {
+      "id": "apppolicy-location",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к местоположению",
+        "en": "Policy (machine-wide): block app access to location"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessLocation",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-contacts",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к контактам",
+        "en": "Policy (machine-wide): block app access to contacts"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessContacts",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-calendar",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к календарю",
+        "en": "Policy (machine-wide): block app access to the calendar"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessCalendar",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-callhistory",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к журналу звонков",
+        "en": "Policy (machine-wide): block app access to call history"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessCallHistory",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-email",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к электронной почте",
+        "en": "Policy (machine-wide): block app access to email"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessEmail",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-accountinfo",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к сведениям учётной записи",
+        "en": "Policy (machine-wide): block app access to account info"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessAccountInfo",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-tasks",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к задачам",
+        "en": "Policy (machine-wide): block app access to tasks"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessTasks",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-notifications",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к уведомлениям",
+        "en": "Policy (machine-wide): block app access to notifications"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessNotifications",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-messaging",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к сообщениям",
+        "en": "Policy (machine-wide): block app access to messaging"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessMessaging",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-phone",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к звонкам",
+        "en": "Policy (machine-wide): block app access to phone calls"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessPhone",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-diagnosticinfo",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к диагностике других приложений",
+        "en": "Policy (machine-wide): block app access to diagnostics of other apps"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsGetDiagnosticInfo",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-radios",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к управлению радиомодулями",
+        "en": "Policy (machine-wide): block app access to radios"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsAccessRadios",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "apppolicy-syncwithdevices",
+      "category": "privacy-apps",
+      "title": {
+        "ru": "Политика (вся система): запретить приложениям доступ к синхронизации с устройствами",
+        "en": "Policy (machine-wide): block app access to device sync"
+      },
+      "path": "HKLM:\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy",
+      "name": "LetAppsSyncWithDevices",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 2
+    },
+    {
+      "id": "search-no-cortana",
+      "category": "system-search",
+      "title": {
+        "ru": "Отключить Cortana",
+        "en": "Turn off Cortana"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "AllowCortana",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "search-no-location",
+      "category": "system-search",
+      "title": {
+        "ru": "Запретить поиску и Cortana использовать геолокацию",
+        "en": "Block search and Cortana from using location"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "AllowSearchToUseLocation",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "search-no-web",
+      "category": "system-search",
+      "title": {
+        "ru": "Убрать веб-поиск из поиска Windows",
+        "en": "Remove web search from Windows Search"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "DisableWebSearch",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1
+    },
+    {
+      "id": "search-no-cloud",
+      "category": "system-search",
+      "title": {
+        "ru": "Отключить облачный поиск (OneDrive/SharePoint)",
+        "en": "Turn off cloud search (OneDrive/SharePoint)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "AllowCloudSearch",
+      "type": "DWord",
+      "min_build": 16299,
+      "value": 0
+    },
+    {
+      "id": "search-no-webresults",
+      "category": "system-search",
+      "title": {
+        "ru": "Не показывать веб-результаты в поиске (Корпоративная/Образование)",
+        "en": "Do not display web results in search (Enterprise/Education)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "ConnectedSearchUseWeb",
+      "type": "DWord",
+      "min_build": 17134,
+      "value": 0
+    },
+    {
+      "id": "search-no-highlights",
+      "category": "system-search",
+      "title": {
+        "ru": "Отключить «интересное» в поиске (search highlights)",
+        "en": "Turn off search highlights"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+      "name": "EnableDynamicContentInWSB",
+      "type": "DWord",
+      "min_build": 19042,
+      "value": 0
+    },
+    {
+      "id": "remote-no-solicited",
+      "category": "system-remote",
+      "title": {
+        "ru": "Запретить запрос удалённой помощи (Solicited Remote Assistance)",
+        "en": "Block solicited Remote Assistance"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+      "name": "fAllowToGetHelp",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 0
+    },
+    {
+      "id": "remote-no-unsolicited",
+      "category": "system-remote",
+      "title": {
+        "ru": "Запретить предложение удалённой помощи (Offer Remote Assistance)",
+        "en": "Block unsolicited (offer) Remote Assistance"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+      "name": "fAllowUnsolicited",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 0
+    },
+    {
+      "id": "explorer-track-docs-off",
+      "category": "system-explorer",
+      "title": {
+        "ru": "Не отслеживать недавние файлы (Пуск, Проводник, списки переходов)",
+        "en": "Do not track recent files (Start, File Explorer, Jump Lists)"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "Start_TrackDocs",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "explorer-show-ext",
+      "category": "system-explorer",
+      "title": {
+        "ru": "Показывать расширения файлов",
+        "en": "Show file name extensions"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "HideFileExt",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0
+    },
+    {
+      "id": "explorer-show-hidden",
+      "category": "system-explorer",
+      "title": {
+        "ru": "Показывать скрытые файлы и папки",
+        "en": "Show hidden files and folders"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "Hidden",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1
+    },
+    {
+      "id": "explorer-show-superhidden",
+      "category": "system-explorer",
+      "title": {
+        "ru": "Показывать защищённые системные файлы (для опытных)",
+        "en": "Show protected operating system files (advanced)"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "name": "ShowSuperHidden",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1,
+      "optional": true
+    },
+    {
+      "id": "appearance-apps-dark",
+      "category": "system-appearance",
+      "title": {
+        "ru": "Тёмная тема для приложений",
+        "en": "Dark mode for apps"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+      "name": "AppsUseLightTheme",
+      "type": "DWord",
+      "min_build": 14393,
+      "value": 0,
+      "optional": true
+    },
+    {
+      "id": "appearance-system-dark",
+      "category": "system-appearance",
+      "title": {
+        "ru": "Тёмная тема для системы (панель задач, меню Пуск)",
+        "en": "Dark mode for the system (taskbar, Start)"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+      "name": "SystemUsesLightTheme",
+      "type": "DWord",
+      "min_build": 17763,
+      "value": 0,
+      "optional": true
+    },
+    {
+      "id": "appearance-no-transparency",
+      "category": "system-appearance",
+      "title": {
+        "ru": "Отключить эффекты прозрачности",
+        "en": "Turn off transparency effects"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+      "name": "EnableTransparency",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 0,
+      "optional": true
+    },
+    {
+      "id": "appearance-accent-titlebar",
+      "category": "system-appearance",
+      "title": {
+        "ru": "Показывать акцентный цвет на заголовках окон и границах",
+        "en": "Show accent color on title bars and window borders"
+      },
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+      "name": "ColorPrevalence",
+      "type": "DWord",
+      "min_build": 10240,
+      "value": 1,
+      "optional": true
+    },
+    {
+      "id": "autoplay-no-nonvolume",
+      "category": "system-convenience",
+      "title": {
+        "ru": "Запретить автозапуск с камер и телефонов (MTP)",
+        "en": "Disallow autoplay for cameras and phones (MTP)"
+      },
+      "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer",
+      "name": "NoAutoplayfornonVolume",
+      "type": "DWord",
+      "min_build": 15063,
+      "value": 1
+    }
+  ],
+  "presets": [
+    {
+      "id": "preset-privacy-max",
+      "title": {
+        "ru": "Приватность - максимум",
+        "en": "Privacy - maximum"
+      },
+      "desc": {
+        "ru": "Все настройки приватности: телеметрия, ввод и речь, реклама, ИИ, доступ приложений. Не трогает Проводник, оформление и систему.",
+        "en": "All privacy settings: telemetry, input and speech, ads, AI, app permissions. Leaves File Explorer, appearance and system untouched."
+      },
+      "items": [
+        "telemetry-allow-min",
+        "telemetry-no-feedback",
+        "telemetry-device-name",
+        "telemetry-no-dataviewer",
+        "telemetry-no-wer",
+        "telemetry-no-tailored",
+        "telemetry-ceip",
+        "telemetry-track-progs",
+        "telemetry-no-siuf",
+        "input-no-linguistic",
+        "input-no-implicit-text",
+        "input-no-implicit-ink",
+        "input-no-personalization",
+        "input-no-online-speech",
+        "activity-no-feed",
+        "activity-no-publish",
+        "activity-no-upload",
+        "clipboard-no-crossdevice",
+        "sync-no-settingsync",
+        "sync-no-override",
+        "ads-advertising-id",
+        "ads-advertising-id-policy",
+        "ads-start-suggestions",
+        "ads-silent-apps",
+        "ads-settings-tips",
+        "ads-welcome",
+        "ads-start-tips",
+        "ads-start-suggestions2",
+        "ads-soft-landing",
+        "ads-lockscreen-tips",
+        "ads-lockscreen-overlay",
+        "ads-start-iris",
+        "ads-scoobe",
+        "ads-sync-notif",
+        "ads-suggested-toast",
+        "ai-copilot-button",
+        "ai-recall-off",
+        "ai-recall-no-analysis",
+        "ai-no-clicktodo",
+        "ai-paint-no-cocreator",
+        "ai-paint-no-imagecreator",
+        "ai-paint-no-genfill",
+        "ai-apps-no-generativeai",
+        "app-no-location",
+        "app-no-contacts",
+        "app-no-calendar",
+        "app-no-callhistory",
+        "app-no-email",
+        "app-no-accountinfo",
+        "app-no-tasks",
+        "app-no-notifications",
+        "app-no-messaging",
+        "app-no-phone",
+        "app-no-appdiag",
+        "app-no-radios",
+        "app-no-bluetoothsync",
+        "apppolicy-location",
+        "apppolicy-contacts",
+        "apppolicy-calendar",
+        "apppolicy-callhistory",
+        "apppolicy-email",
+        "apppolicy-accountinfo",
+        "apppolicy-tasks",
+        "apppolicy-notifications",
+        "apppolicy-messaging",
+        "apppolicy-phone",
+        "apppolicy-diagnosticinfo",
+        "apppolicy-radios",
+        "apppolicy-syncwithdevices"
+      ]
+    },
+    {
+      "id": "preset-privacy-basic",
+      "title": {
+        "ru": "Приватность - базовая",
+        "en": "Privacy - basic"
+      },
+      "desc": {
+        "ru": "Самое заметное с наименьшим риском сломать привычное: телеметрия и диагностика + реклама и рекомендации.",
+        "en": "The most noticeable items with the least risk of breaking habits: telemetry and diagnostics + ads and recommendations."
+      },
+      "items": [
+        "telemetry-allow-min",
+        "telemetry-no-feedback",
+        "telemetry-device-name",
+        "telemetry-no-dataviewer",
+        "telemetry-no-wer",
+        "telemetry-no-tailored",
+        "telemetry-ceip",
+        "telemetry-track-progs",
+        "telemetry-no-siuf",
+        "ads-advertising-id",
+        "ads-advertising-id-policy",
+        "ads-start-suggestions",
+        "ads-silent-apps",
+        "ads-settings-tips",
+        "ads-welcome",
+        "ads-start-tips",
+        "ads-start-suggestions2",
+        "ads-soft-landing",
+        "ads-lockscreen-tips",
+        "ads-lockscreen-overlay",
+        "ads-start-iris",
+        "ads-scoobe",
+        "ads-sync-notif",
+        "ads-suggested-toast"
+      ]
+    },
+    {
+      "id": "preset-workplace",
+      "title": {
+        "ru": "Рабочее место под ключ",
+        "en": "Turnkey workplace"
+      },
+      "desc": {
+        "ru": "Базовая приватность + Поиск Windows без веба и Cortana + удалённая помощь выключена + расширения файлов, без слежки за недавними, без автозапуска с камер.",
+        "en": "Basic privacy + Windows Search without web and Cortana + Remote Assistance off + file extensions, no recent-files tracking, no autoplay from cameras."
+      },
+      "items": [
+        "telemetry-allow-min",
+        "telemetry-no-feedback",
+        "telemetry-device-name",
+        "telemetry-no-dataviewer",
+        "telemetry-no-wer",
+        "telemetry-no-tailored",
+        "telemetry-ceip",
+        "telemetry-track-progs",
+        "telemetry-no-siuf",
+        "ads-advertising-id",
+        "ads-advertising-id-policy",
+        "ads-start-suggestions",
+        "ads-silent-apps",
+        "ads-settings-tips",
+        "ads-welcome",
+        "ads-start-tips",
+        "ads-start-suggestions2",
+        "ads-soft-landing",
+        "ads-lockscreen-tips",
+        "ads-lockscreen-overlay",
+        "ads-start-iris",
+        "ads-scoobe",
+        "ads-sync-notif",
+        "ads-suggested-toast",
+        "search-no-cortana",
+        "search-no-location",
+        "search-no-web",
+        "search-no-cloud",
+        "search-no-webresults",
+        "search-no-highlights",
+        "remote-no-solicited",
+        "remote-no-unsolicited",
+        "explorer-show-ext",
+        "explorer-track-docs-off",
+        "autoplay-no-nonvolume"
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "id": "quick",
+      "addr": 1,
+      "title": {
+        "ru": "Быстрая настройка",
+        "en": "Quick setup"
+      },
+      "desc": {
+        "ru": "готовые наборы настроек",
+        "en": "ready-made sets of settings"
+      },
+      "presets": true
+    },
+    {
+      "id": "privacy",
+      "addr": 2,
+      "title": {
+        "ru": "Приватность и реклама",
+        "en": "Privacy and ads"
+      },
+      "desc": {
+        "ru": "телеметрия, реклама, ИИ, доступ приложений",
+        "en": "telemetry, ads, AI, app permissions"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "что Windows отправляет в Microsoft",
+            "en": "what Windows sends to Microsoft"
+          },
+          "kind": "category",
+          "categories": [
+            "privacy-telemetry"
+          ],
+          "title": {
+            "ru": "Телеметрия и диагностика",
+            "en": "Telemetry and diagnostics"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 2,
+          "desc": {
+            "ru": "набор текста, голос, история действий",
+            "en": "typing, voice, activity history"
+          },
+          "kind": "category",
+          "categories": [
+            "privacy-input"
+          ],
+          "title": {
+            "ru": "Ввод, речь, журнал действий",
+            "en": "Input, speech, activity history"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 3,
+          "desc": {
+            "ru": "советы и реклама в «Пуске» и на экране блокировки",
+            "en": "tips and ads in Start and on the lock screen"
+          },
+          "kind": "category",
+          "categories": [
+            "privacy-ads"
+          ],
+          "title": {
+            "ru": "Реклама и рекомендации",
+            "en": "Advertising and recommendations"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 4,
+          "desc": {
+            "ru": "камера, микрофон, место, контакты",
+            "en": "camera, microphone, location, contacts"
+          },
+          "kind": "category",
+          "categories": [
+            "privacy-apps"
+          ],
+          "title": {
+            "ru": "Доступ приложений",
+            "en": "App permissions"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 5,
+          "desc": {
+            "ru": "выключить встроенный ИИ",
+            "en": "turn the built-in AI off"
+          },
+          "kind": "category",
+          "categories": [
+            "privacy-ai"
+          ],
+          "title": {
+            "ru": "ИИ в Windows: Copilot, Recall, Paint",
+            "en": "AI in Windows: Copilot, Recall, Paint"
+          },
+          "min_build": 10240
+        }
+      ]
+    },
+    {
+      "id": "windows",
+      "addr": 3,
+      "title": {
+        "ru": "Windows: работа и вид",
+        "en": "Windows: behaviour and look"
+      },
+      "desc": {
+        "ru": "поиск, Проводник, оформление",
+        "en": "search, File Explorer, appearance"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "без веб-выдачи и Cortana",
+            "en": "no web results, no Cortana"
+          },
+          "kind": "category",
+          "categories": [
+            "system-search"
+          ],
+          "title": {
+            "ru": "Поиск Windows",
+            "en": "Windows Search"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 2,
+          "desc": {
+            "ru": "расширения файлов, недавние, автозапуск",
+            "en": "file extensions, recent files, autoplay"
+          },
+          "kind": "group",
+          "categories": [
+            "system-explorer",
+            "system-convenience"
+          ],
+          "title": {
+            "ru": "Проводник и носители",
+            "en": "File Explorer and media"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 3,
+          "desc": {
+            "ru": "тема и эффекты",
+            "en": "theme and effects"
+          },
+          "kind": "category",
+          "categories": [
+            "system-appearance"
+          ],
+          "title": {
+            "ru": "Оформление",
+            "en": "Appearance"
+          },
+          "min_build": 14393
+        }
+      ]
+    },
+    {
+      "id": "esign",
+      "addr": 4,
+      "title": {
+        "ru": "Электронная подпись и госуслуги",
+        "en": "E-signature and government services"
+      },
+      "desc": {
+        "ru": "сертификаты удостоверяющих центров",
+        "en": "certificate authority certificates"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "поставить российские, убрать устаревшие",
+            "en": "install the Russian ones, remove outdated"
+          },
+          "kind": "module",
+          "module": "certs",
+          "title": {
+            "ru": "Сертификаты удостоверяющих центров",
+            "en": "Certificate authority certificates"
+          },
+          "min_build": 10240
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "addr": 5,
+      "title": {
+        "ru": "Интернет и сеть",
+        "en": "Internet and network"
+      },
+      "desc": {
+        "ru": "DNS, поиск Яндекса, удалённый помощник",
+        "en": "DNS, Yandex search, Remote Assistance"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "шифрованный DNS, поиск в браузерах, сброс сети",
+            "en": "encrypted DNS, browser search, network reset"
+          },
+          "kind": "module",
+          "module": "yandex-net",
+          "title": {
+            "ru": "DNS и поиск Яндекса",
+            "en": "DNS and Yandex search"
+          },
+          "min_build": 22000
+        },
+        {
+          "addr": 2,
+          "desc": {
+            "ru": "закрыть удалённое подключение к этому компьютеру",
+            "en": "close remote connections to this PC"
+          },
+          "kind": "category",
+          "categories": [
+            "system-remote"
+          ],
+          "title": {
+            "ru": "Удалённый помощник Windows",
+            "en": "Windows Remote Assistance"
+          },
+          "min_build": 15063
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "addr": 6,
+      "title": {
+        "ru": "Для разработчика",
+        "en": "For developers"
+      },
+      "desc": {
+        "ru": "терминал, инструменты, ИИ-агенты",
+        "en": "terminal, tools, AI agents"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "строка приглашения, шрифт, Windows Terminal",
+            "en": "prompt, font, Windows Terminal"
+          },
+          "kind": "module",
+          "module": "terminal",
+          "title": {
+            "ru": "Терминал",
+            "en": "Terminal"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 2,
+          "desc": {
+            "ru": "Git, VS Code, Python, Node, WSL и другие",
+            "en": "Git, VS Code, Python, Node, WSL and more"
+          },
+          "kind": "module",
+          "module": "devtools",
+          "title": {
+            "ru": "Инструменты разработки",
+            "en": "Developer tools"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 3,
+          "desc": {
+            "ru": "Claude Code, Codex, Gemini CLI и другие",
+            "en": "Claude Code, Codex, Gemini CLI and more"
+          },
+          "kind": "module",
+          "module": "ai-agents",
+          "title": {
+            "ru": "ИИ-агенты: установка",
+            "en": "AI agents: install"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 4,
+          "desc": {
+            "ru": "строка состояния Claude Code и профиль",
+            "en": "Claude Code status line and profile"
+          },
+          "kind": "module",
+          "module": "ai-terminal",
+          "title": {
+            "ru": "ИИ-агенты: настройка",
+            "en": "AI agents: setup"
+          },
+          "min_build": 10240
+        },
+        {
+          "addr": 5,
+          "desc": {
+            "ru": "Docker, Podman, VirtualBox",
+            "en": "Docker, Podman, VirtualBox"
+          },
+          "kind": "programs",
+          "group": "containers",
+          "title": {
+            "ru": "Контейнеры и виртуальные машины",
+            "en": "Containers and virtual machines"
+          },
+          "min_build": 19041
+        },
+        {
+          "addr": 6,
+          "desc": {
+            "ru": "Go, Rust, .NET, Java, среды JetBrains",
+            "en": "Go, Rust, .NET, Java, JetBrains IDEs"
+          },
+          "kind": "programs",
+          "group": "languages",
+          "title": {
+            "ru": "Языки и среды разработки",
+            "en": "Languages and IDEs"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 7,
+          "desc": {
+            "ru": "PuTTY, WinSCP, kubectl, Postman, DBeaver",
+            "en": "PuTTY, WinSCP, kubectl, Postman, DBeaver"
+          },
+          "kind": "programs",
+          "group": "servers",
+          "title": {
+            "ru": "Серверы, базы и диагностика",
+            "en": "Servers, databases and diagnostics"
+          },
+          "min_build": 17763
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "addr": 7,
+      "title": {
+        "ru": "Программы",
+        "en": "Programs"
+      },
+      "desc": {
+        "ru": "браузеры, документы, связь, утилиты",
+        "en": "browsers, documents, messaging, utilities"
+      },
+      "items": [
+        {
+          "addr": 1,
+          "desc": {
+            "ru": "Яндекс Браузер, Chrome, Firefox",
+            "en": "Yandex Browser, Chrome, Firefox"
+          },
+          "kind": "programs",
+          "group": "browsers",
+          "title": {
+            "ru": "Браузеры",
+            "en": "Browsers"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 2,
+          "desc": {
+            "ru": "архиватор, офис, PDF, блокнот",
+            "en": "archiver, office, PDF, notepad"
+          },
+          "kind": "programs",
+          "group": "documents",
+          "title": {
+            "ru": "Документы и архивы",
+            "en": "Documents and archives"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 3,
+          "desc": {
+            "ru": "Telegram, MAX, Zoom, почта",
+            "en": "Telegram, MAX, Zoom, mail"
+          },
+          "kind": "programs",
+          "group": "messaging",
+          "title": {
+            "ru": "Связь и почта",
+            "en": "Messaging and mail"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 4,
+          "desc": {
+            "ru": "Яндекс Диск, Google Диск, хранители паролей",
+            "en": "Yandex Disk, Google Drive, password managers"
+          },
+          "kind": "programs",
+          "group": "cloud",
+          "title": {
+            "ru": "Облако и пароли",
+            "en": "Cloud and passwords"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 5,
+          "desc": {
+            "ru": "AnyDesk, RMS, Radmin",
+            "en": "AnyDesk, RMS, Radmin"
+          },
+          "kind": "programs",
+          "group": "remote",
+          "title": {
+            "ru": "Удалённая помощь",
+            "en": "Remote help"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 6,
+          "desc": {
+            "ru": "PowerToys, поиск файлов, снимки экрана",
+            "en": "PowerToys, file search, screenshots"
+          },
+          "kind": "programs",
+          "group": "utilities",
+          "title": {
+            "ru": "Утилиты Windows",
+            "en": "Windows utilities"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 7,
+          "desc": {
+            "ru": "Visual C++, .NET, WebView2, Java",
+            "en": "Visual C++, .NET, WebView2, Java"
+          },
+          "kind": "programs",
+          "group": "runtimes",
+          "title": {
+            "ru": "Библиотеки для запуска программ",
+            "en": "Runtimes"
+          },
+          "min_build": 17763
+        },
+        {
+          "addr": 8,
+          "desc": {
+            "ru": "Visual C++ 2005-2013, DirectX, XNA, OpenAL",
+            "en": "Visual C++ 2005-2013, DirectX, XNA, OpenAL"
+          },
+          "kind": "programs",
+          "group": "gamelibs",
+          "title": {
+            "ru": "Библиотеки для игр и старых программ",
+            "en": "Libraries for games and older programs"
+          },
+          "min_build": 17763
+        }
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "id": "containers",
+      "title": {
+        "ru": "Контейнеры и виртуальные машины",
+        "en": "Containers and virtual machines"
+      },
+      "min_build": 19041,
+      "items": [
+        {
+          "id": "Docker.DockerDesktop",
+          "name": {
+            "ru": "Docker Desktop - контейнеры с окном управления",
+            "en": "Docker Desktop - containers with a control panel"
+          },
+          "check": "docker"
+        },
+        {
+          "id": "RedHat.Podman-Desktop",
+          "name": {
+            "ru": "Podman Desktop - контейнеры без платной подписки",
+            "en": "Podman Desktop - containers with no paid subscription"
+          }
+        },
+        {
+          "id": "RedHat.Podman",
+          "name": {
+            "ru": "Podman - контейнеры из командной строки",
+            "en": "Podman - containers from the command line"
+          },
+          "check": "podman"
+        },
+        {
+          "id": "Oracle.VirtualBox",
+          "name": {
+            "ru": "VirtualBox - виртуальные машины",
+            "en": "VirtualBox - virtual machines"
+          }
+        }
+      ],
+      "warn": {
+        "ru": [
+          "Docker и Podman работают поверх WSL 2 - сначала поставьте его в «Инструментах разработки».",
+          "Docker Desktop бесплатен не для всех: крупным компаниям нужна подписка, условия - на docker.com.",
+          "После установки понадобится перезагрузка."
+        ],
+        "en": [
+          "Docker and Podman run on top of WSL 2 - install it first in \"Developer tools\".",
+          "Docker Desktop is not free for everyone: large companies need a subscription, see docker.com.",
+          "A restart is needed after the installation."
+        ]
+      }
+    },
+    {
+      "id": "languages",
+      "title": {
+        "ru": "Языки и среды разработки",
+        "en": "Languages and IDEs"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "GoLang.Go",
+          "name": {
+            "ru": "Go - язык и сборка",
+            "en": "Go - language and toolchain"
+          },
+          "check": "go"
+        },
+        {
+          "id": "Rustlang.Rustup",
+          "name": {
+            "ru": "Rust (rustup) - язык и сборка",
+            "en": "Rust (rustup) - language and toolchain"
+          },
+          "check": "rustup"
+        },
+        {
+          "id": "Microsoft.DotNet.SDK.9",
+          "name": {
+            "ru": ".NET SDK 9 - сборка программ на C#",
+            "en": ".NET SDK 9 - build C# programs"
+          }
+        },
+        {
+          "id": "EclipseAdoptium.Temurin.21.JDK",
+          "name": {
+            "ru": "Java 21 JDK (Temurin) - сборка программ на Java",
+            "en": "Java 21 JDK (Temurin) - build Java programs"
+          }
+        },
+        {
+          "id": "JetBrains.Toolbox",
+          "name": {
+            "ru": "JetBrains Toolbox - установка IDEA, PyCharm, WebStorm",
+            "en": "JetBrains Toolbox - installs IDEA, PyCharm, WebStorm"
+          }
+        }
+      ],
+      "warn": {
+        "ru": [
+          "Python и Node.js стоят в «Инструментах разработки»."
+        ],
+        "en": [
+          "Python and Node.js are in \"Developer tools\"."
+        ]
+      }
+    },
+    {
+      "id": "servers",
+      "title": {
+        "ru": "Серверы, базы и диагностика",
+        "en": "Servers, databases and diagnostics"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "PuTTY.PuTTY",
+          "name": {
+            "ru": "PuTTY - подключение к серверу по SSH",
+            "en": "PuTTY - SSH connection to a server"
+          }
+        },
+        {
+          "id": "WinSCP.WinSCP",
+          "name": {
+            "ru": "WinSCP - файлы на сервере по SFTP",
+            "en": "WinSCP - server files over SFTP"
+          }
+        },
+        {
+          "id": "Kubernetes.kubectl",
+          "name": {
+            "ru": "kubectl - управление Kubernetes",
+            "en": "kubectl - Kubernetes control"
+          },
+          "check": "kubectl"
+        },
+        {
+          "id": "Helm.Helm",
+          "name": {
+            "ru": "Helm - пакеты для Kubernetes",
+            "en": "Helm - packages for Kubernetes"
+          },
+          "check": "helm"
+        },
+        {
+          "id": "Postman.Postman",
+          "name": {
+            "ru": "Postman - проверка запросов к API",
+            "en": "Postman - API request testing"
+          }
+        },
+        {
+          "id": "DBeaver.DBeaver.Community",
+          "name": {
+            "ru": "DBeaver - работа с базами данных",
+            "en": "DBeaver - database client"
+          }
+        },
+        {
+          "id": "WinMerge.WinMerge",
+          "name": {
+            "ru": "WinMerge - сравнение файлов и папок",
+            "en": "WinMerge - file and folder comparison"
+          }
+        },
+        {
+          "id": "Microsoft.Sysinternals.ProcessExplorer",
+          "name": {
+            "ru": "Process Explorer - что запущено и чем занято",
+            "en": "Process Explorer - what runs and what it holds"
+          }
+        },
+        {
+          "id": "TortoiseGit.TortoiseGit",
+          "name": {
+            "ru": "TortoiseGit - Git в меню Проводника",
+            "en": "TortoiseGit - Git in the Explorer menu"
+          }
+        }
+      ]
+    },
+    {
+      "id": "browsers",
+      "title": {
+        "ru": "Браузеры",
+        "en": "Browsers"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Yandex.Browser",
+          "name": {
+            "ru": "Яндекс Браузер",
+            "en": "Yandex Browser"
+          }
+        },
+        {
+          "id": "Google.Chrome",
+          "name": {
+            "ru": "Google Chrome",
+            "en": "Google Chrome"
+          }
+        },
+        {
+          "id": "Mozilla.Firefox.ru",
+          "name": {
+            "ru": "Mozilla Firefox - на русском языке",
+            "en": "Mozilla Firefox - Russian build"
+          }
+        },
+        {
+          "id": "CryptoPro.Chromium-Gost",
+          "name": {
+            "ru": "Chromium-Gost - браузер с российским шифрованием для подписи",
+            "en": "Chromium-Gost - browser with Russian cryptography for e-signature"
+          }
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "title": {
+        "ru": "Документы и архивы",
+        "en": "Documents and archives"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "7zip.7zip",
+          "name": {
+            "ru": "7-Zip - архиватор",
+            "en": "7-Zip - archiver"
+          }
+        },
+        {
+          "id": "TheDocumentFoundation.LibreOffice",
+          "name": {
+            "ru": "LibreOffice - тексты, таблицы, презентации",
+            "en": "LibreOffice - documents, spreadsheets, slides"
+          }
+        },
+        {
+          "id": "ONLYOFFICE.DesktopEditors",
+          "name": {
+            "ru": "ONLYOFFICE - редакторы, близкие к Microsoft Office",
+            "en": "ONLYOFFICE - editors close to Microsoft Office"
+          }
+        },
+        {
+          "id": "SumatraPDF.SumatraPDF",
+          "name": {
+            "ru": "SumatraPDF - быстрый просмотр PDF",
+            "en": "SumatraPDF - fast PDF viewer"
+          }
+        },
+        {
+          "id": "Adobe.Acrobat.Reader.64-bit",
+          "name": {
+            "ru": "Adobe Acrobat Reader - просмотр и подпись PDF",
+            "en": "Adobe Acrobat Reader - view and sign PDF"
+          }
+        },
+        {
+          "id": "geeksoftwareGmbH.PDF24Creator",
+          "name": {
+            "ru": "PDF24 - склеить, разделить, сжать PDF",
+            "en": "PDF24 - merge, split, compress PDF"
+          }
+        },
+        {
+          "id": "Notepad++.Notepad++",
+          "name": {
+            "ru": "Notepad++ - текстовый редактор",
+            "en": "Notepad++ - text editor"
+          }
+        }
+      ]
+    },
+    {
+      "id": "messaging",
+      "title": {
+        "ru": "Связь и почта",
+        "en": "Messaging and mail"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Telegram.TelegramDesktop",
+          "name": {
+            "ru": "Telegram",
+            "en": "Telegram"
+          }
+        },
+        {
+          "id": "CommunicationPlatform.MAX",
+          "name": {
+            "ru": "MAX - мессенджер",
+            "en": "MAX - messenger"
+          }
+        },
+        {
+          "id": "Zoom.Zoom",
+          "name": {
+            "ru": "Zoom - видеовстречи",
+            "en": "Zoom - video meetings"
+          }
+        },
+        {
+          "id": "Mozilla.Thunderbird.ru",
+          "name": {
+            "ru": "Thunderbird - почта, на русском языке",
+            "en": "Thunderbird - mail, Russian build"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": {
+        "ru": "Облако и пароли",
+        "en": "Cloud and passwords"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Yandex.Disk",
+          "name": {
+            "ru": "Яндекс Диск",
+            "en": "Yandex Disk"
+          }
+        },
+        {
+          "id": "Google.GoogleDrive",
+          "name": {
+            "ru": "Google Диск",
+            "en": "Google Drive"
+          }
+        },
+        {
+          "id": "KeePassXCTeam.KeePassXC",
+          "name": {
+            "ru": "KeePassXC - пароли в файле на этом компьютере",
+            "en": "KeePassXC - passwords in a file on this PC"
+          }
+        },
+        {
+          "id": "Bitwarden.Bitwarden",
+          "name": {
+            "ru": "Bitwarden - пароли с синхронизацией",
+            "en": "Bitwarden - passwords with sync"
+          }
+        }
+      ]
+    },
+    {
+      "id": "remote",
+      "title": {
+        "ru": "Удалённая помощь",
+        "en": "Remote help"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "AnyDesk.AnyDesk",
+          "name": {
+            "ru": "AnyDesk",
+            "en": "AnyDesk"
+          }
+        },
+        {
+          "id": "RemoteUtilities.Viewer",
+          "name": {
+            "ru": "RMS Клиент - подключение к чужому компьютеру",
+            "en": "Remote Utilities Viewer - connect to another PC"
+          }
+        },
+        {
+          "id": "Famatech.Radmin.Client",
+          "name": {
+            "ru": "Radmin Viewer - подключение к чужому компьютеру",
+            "en": "Radmin Viewer - connect to another PC"
+          }
+        }
+      ],
+      "warn": {
+        "ru": [
+          "Эти программы дают другому человеку управление вашим компьютером.",
+          "Если поставить такую программу просит незнакомец по телефону - это мошенник."
+        ],
+        "en": [
+          "These programs let another person control your computer.",
+          "If a stranger on the phone asks you to install one, it is a scam."
+        ]
+      }
+    },
+    {
+      "id": "utilities",
+      "title": {
+        "ru": "Утилиты Windows",
+        "en": "Windows utilities"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Microsoft.PowerToys",
+          "name": {
+            "ru": "PowerToys - раскладка окон, переименование, пипетка",
+            "en": "PowerToys - window layouts, renaming, color picker"
+          }
+        },
+        {
+          "id": "voidtools.Everything",
+          "name": {
+            "ru": "Everything - мгновенный поиск файлов",
+            "en": "Everything - instant file search"
+          }
+        },
+        {
+          "id": "ShareX.ShareX",
+          "name": {
+            "ru": "ShareX - снимки и запись экрана",
+            "en": "ShareX - screenshots and screen recording"
+          }
+        },
+        {
+          "id": "VideoLAN.VLC",
+          "name": {
+            "ru": "VLC - видео и музыка",
+            "en": "VLC - video and music"
+          }
+        },
+        {
+          "id": "CrystalDewWorld.CrystalDiskInfo",
+          "name": {
+            "ru": "CrystalDiskInfo - здоровье диска",
+            "en": "CrystalDiskInfo - disk health"
+          }
+        },
+        {
+          "id": "FarManager.FarManager",
+          "name": {
+            "ru": "Far Manager - файловый менеджер",
+            "en": "Far Manager - file manager"
+          }
+        }
+      ]
+    },
+    {
+      "id": "runtimes",
+      "title": {
+        "ru": "Библиотеки для запуска программ",
+        "en": "Runtimes"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Microsoft.VCRedist.2015+.x64",
+          "name": {
+            "ru": "Visual C++ 2015-2022 (64 бита)",
+            "en": "Visual C++ 2015-2022 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2015+.x86",
+          "name": {
+            "ru": "Visual C++ 2015-2022 (32 бита)",
+            "en": "Visual C++ 2015-2022 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.DotNet.DesktopRuntime.8",
+          "name": {
+            "ru": ".NET 8 - для программ с окнами",
+            "en": ".NET 8 Desktop Runtime"
+          }
+        },
+        {
+          "id": "Microsoft.EdgeWebView2Runtime",
+          "name": {
+            "ru": "WebView2 - встроенный браузер для программ",
+            "en": "WebView2 Runtime"
+          }
+        },
+        {
+          "id": "EclipseAdoptium.Temurin.21.JRE",
+          "name": {
+            "ru": "Java 21 (Temurin) - запуск программ на Java",
+            "en": "Java 21 JRE (Temurin)"
+          }
+        }
+      ],
+      "warn": {
+        "ru": [
+          "Нужны, когда программа при запуске просит Visual C++, .NET, WebView2 или Java."
+        ],
+        "en": [
+          "Needed when a program asks for Visual C++, .NET, WebView2 or Java at start."
+        ]
+      }
+    },
+    {
+      "id": "gamelibs",
+      "title": {
+        "ru": "Библиотеки для игр и старых программ",
+        "en": "Libraries for games and older programs"
+      },
+      "min_build": 17763,
+      "items": [
+        {
+          "id": "Microsoft.VCRedist.2005.x64",
+          "name": {
+            "ru": "Visual C++ 2005 (64 бита)",
+            "en": "Visual C++ 2005 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2005.x86",
+          "name": {
+            "ru": "Visual C++ 2005 (32 бита)",
+            "en": "Visual C++ 2005 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2008.x64",
+          "name": {
+            "ru": "Visual C++ 2008 (64 бита)",
+            "en": "Visual C++ 2008 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2008.x86",
+          "name": {
+            "ru": "Visual C++ 2008 (32 бита)",
+            "en": "Visual C++ 2008 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2010.x64",
+          "name": {
+            "ru": "Visual C++ 2010 (64 бита)",
+            "en": "Visual C++ 2010 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2010.x86",
+          "name": {
+            "ru": "Visual C++ 2010 (32 бита)",
+            "en": "Visual C++ 2010 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2012.x64",
+          "name": {
+            "ru": "Visual C++ 2012 (64 бита)",
+            "en": "Visual C++ 2012 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2012.x86",
+          "name": {
+            "ru": "Visual C++ 2012 (32 бита)",
+            "en": "Visual C++ 2012 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2013.x64",
+          "name": {
+            "ru": "Visual C++ 2013 (64 бита)",
+            "en": "Visual C++ 2013 (64-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.VCRedist.2013.x86",
+          "name": {
+            "ru": "Visual C++ 2013 (32 бита)",
+            "en": "Visual C++ 2013 (32-bit)"
+          }
+        },
+        {
+          "id": "Microsoft.DirectX",
+          "name": {
+            "ru": "DirectX 9 - библиотеки для старых игр",
+            "en": "DirectX 9 - libraries for older games"
+          }
+        },
+        {
+          "id": "Microsoft.XNARedist",
+          "name": {
+            "ru": "XNA Framework 4.0 - для игр на XNA",
+            "en": "XNA Framework 4.0 - for XNA games"
+          }
+        },
+        {
+          "id": "CreativeTechnology.OpenAL",
+          "name": {
+            "ru": "OpenAL - звук в играх",
+            "en": "OpenAL - game audio"
+          }
+        }
+      ],
+      "warn": {
+        "ru": [
+          "Нужны, когда игра или старая программа не запускается и просит MSVCR, MSVCP, D3DX, XNA или OpenAL.",
+          "Новым программам хватает «Библиотек для запуска программ». Команда a ставит всё разом."
+        ],
+        "en": [
+          "Needed when a game or an older program does not start and asks for MSVCR, MSVCP, D3DX, XNA or OpenAL.",
+          "Newer programs only need \"Runtimes\". The a command installs everything at once."
+        ]
+      }
+    }
+  ]
+}
