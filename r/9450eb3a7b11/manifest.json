@@ -1,0 +1,112 @@
+{
+  "entry": "menu.ps1",
+  "files": [
+    {
+      "name": "menu.ps1",
+      "sha256": "DEA282682E6519505871C8601631397AE566943BCD6C72507F5487B6F4DBC0E6",
+      "size": 12953
+    },
+    {
+      "name": "lib.ps1",
+      "sha256": "BD5BE90A931288CEAF24005384A5E6B574683D842E48A6DA0998E036DEB74914",
+      "size": 32612
+    },
+    {
+      "name": "hklm-helper.ps1",
+      "sha256": "B18E8D0C1A1ABE6AB9AC2181DC7B29C052A1C72BF49F60B3D7C0038B95727DB5",
+      "size": 6577
+    },
+    {
+      "name": "ui.ps1",
+      "sha256": "456F27EA1F6B3B1BA4DA2A2BD7D366EEFA7061C0214B8DFE89A26444E886FE1E",
+      "size": 6050
+    },
+    {
+      "name": "terminal.ps1",
+      "sha256": "098E400D8516F9093364130EE3AFAA1825FB9B5EAEB37B69913D4D5002137994",
+      "size": 19310
+    },
+    {
+      "name": "aiterm.ps1",
+      "sha256": "62154D3D477C43640DDDFFC353F417DD00BE394D89957B8EA0311EE813BBA8C9",
+      "size": 15633
+    },
+    {
+      "name": "wsl.ps1",
+      "sha256": "2FADDD14419F339C78EDF73775D9831B4B0EDCB3D40FAC46CF72D6C6CE377011",
+      "size": 2859
+    },
+    {
+      "name": "devtools.ps1",
+      "sha256": "4F7F7A386E0B868DB795675FAF414260484377F56EC06C2EE9950BC8D5E79E3A",
+      "size": 13768
+    },
+    {
+      "name": "certs.ps1",
+      "sha256": "F837D1D95070F0DD20ABA840941707E739092E32CD37EF65E70435F1D1F27439",
+      "size": 33147
+    },
+    {
+      "name": "strings.ps1",
+      "sha256": "CF93157F53C08D9664DD7052A46CFDEE82438C9B184DAACFC522907D92FF3436",
+      "size": 32820
+    },
+    {
+      "name": "yandex-net.ps1",
+      "sha256": "78E254B22CB6DA3AE06B659D92464EC64C5A5AE8F9A99D91A2528FB08B02A830",
+      "size": 70445
+    },
+    {
+      "name": "yandex-browser.ps1",
+      "sha256": "DF92C4022E57782B68986EA9D1433FD6192BD61B62DE72A28B13CBDE92E0927B",
+      "size": 29651
+    },
+    {
+      "name": "settings.json",
+      "sha256": "2AF85F6C3B9F7AAC699A48BD2321BFA50A0F6D29FE969E414DF2F57F5C6B4F61",
+      "size": 84836
+    },
+    {
+      "name": "claude.omp.json",
+      "sha256": "28E0793BE5A10DD37D2570AF35D5B3AD7044B2A763C405A18133881A604E6C81",
+      "size": 11271
+    },
+    {
+      "name": "statusline-omp.py",
+      "sha256": "A3772424551BCF527DF0C8D6F77302075FB3FB2A3DAFD002777EB61195FA6EED",
+      "size": 6095
+    },
+    {
+      "name": "statusline-command.py",
+      "sha256": "AC9A5F08B4781CD1C7D7ADA7343889CC0E794116963922E54E7932182359F9DA",
+      "size": 10854
+    },
+    {
+      "name": "autosettings.profile.ps1",
+      "sha256": "B4421AFBB03C0929FF1C5471FF15187B6F0660818C63712BCA2A08E8305C146A",
+      "size": 6758
+    },
+    {
+      "name": "kontur-certs.json",
+      "sha256": "807E1B45315050B34DD888384E19C872141CFADD54A69AB660E3888648CDA32E",
+      "size": 284645
+    },
+    {
+      "name": "yandex-browser-policies.json",
+      "sha256": "E276418C80E3F754C689BB08D9CC332EACCBA2CBD1C1A408D11A68D267AABAA7",
+      "size": 2796585
+    }
+  ],
+  "payloads": [
+    {
+      "name": "YandexBrowser.msi",
+      "version": "26.8.1.1087",
+      "sha256": "51B0019F520B85D2B5AB7414DA59ED2B7423156D6C21DBF2ED193BC797B91F2E",
+      "size": 208171008,
+      "urls": [
+        "https://browser-corp-data.s3.yandex.net/installers/51256bc3-8d50-4cce-914d-e768dd86d202/YandexBrowser.msi"
+      ]
+    }
+  ],
+  "modules": []
+}
