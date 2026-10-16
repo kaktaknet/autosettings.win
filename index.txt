@@ -32,7 +32,8 @@
         'https://07fb86d8-6ff1-42fd-b3c2-e1495dfe2740.srvstatic.kz',
         'https://2202f6b7-bfb6-48d8-bfe4-66b18452d821.selstorage.ru',
         'https://autosettings.s3.cloud.ru',
-        'https://autosettings-win.storage.yandexcloud.net'
+        'https://autosettings-win.storage.yandexcloud.net',
+        'https://ya.autosettings.win'
     )
     $mirrors = New-Object Collections.ArrayList
     foreach ($store in ($stores | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
