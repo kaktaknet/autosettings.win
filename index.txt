@@ -40,8 +40,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = 'a9685928fe61'
-    $pinned  = 'A9685928FE616D6EC75858C393207612D5DD6C13A42654F2ADB525D31F957B80'
+    $release = '46618f289e2f'
+    $pinned  = '46618F289E2F793701624B43BAE20DF7781D4BEB897613582B3216A557B87B93'
 
     function Fail([string]$Message) {
         Write-Host ''
@@ -121,6 +121,15 @@
         return $null
     }
 
+    function Get-MenuHost([string]$Own, [bool]$Os64, [bool]$Proc64, [string]$Root) {
+        if ($Os64 -and -not $Proc64) {
+            $native = Join-Path $Root 'Sysnative\WindowsPowerShell\v1.0\powershell.exe'
+            if (Test-Path -LiteralPath $native) { return $native }
+        }
+        if ($Own -and (Test-Path -LiteralPath $Own)) { return $Own }
+        return (Join-Path $Root 'System32\WindowsPowerShell\v1.0\powershell.exe')
+    }
+
     function Fail-Download([string]$Message) {
         Write-Host ''
         Write-Host "  [!!] $Message" -ForegroundColor Red
@@ -174,11 +183,9 @@
         [IO.File]::WriteAllBytes((Join-Path $dir $file.name), $bytes)
     }
 
-    $hostExe = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
-    try {
-        $own = (Get-Process -Id $PID -ErrorAction Stop).Path
-        if ($own -and (Test-Path -LiteralPath $own)) { $hostExe = $own }
-    } catch {}
+    $own = $null
+    try { $own = (Get-Process -Id $PID -ErrorAction Stop).Path } catch {}
+    $hostExe = Get-MenuHost $own ([Environment]::Is64BitOperatingSystem) ([Environment]::Is64BitProcess) $env:SystemRoot
     & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $dir $manifest.entry) $pinned
     Remove-Item -Path $dir -Recurse -Force -ErrorAction SilentlyContinue
 }
