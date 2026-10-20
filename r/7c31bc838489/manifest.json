@@ -1,0 +1,213 @@
+{
+  "entry": "menu.ps1",
+  "files": [
+    {
+      "name": "menu.ps1",
+      "sha256": "BC4BDE6133FABCA56BB2C312C568EC06868B60D218044668A7E71E2A72B9090C",
+      "size": 21229
+    },
+    {
+      "name": "lib.ps1",
+      "sha256": "A08419CC3953849055EDEBC696D882F3CCF3DD726EBC5EC58371AD6181FD6542",
+      "size": 52604
+    },
+    {
+      "name": "hklm-helper.ps1",
+      "sha256": "CFE81C3A780E5BA08B4F479ECBEBF8070DB6149FF9FB935431740AAE8395BA06",
+      "size": 20800
+    },
+    {
+      "name": "ui.ps1",
+      "sha256": "915070ACF478D6498407262423BB6B73C5563602263082C834B82D7E27159258",
+      "size": 6092
+    },
+    {
+      "name": "terminal.ps1",
+      "sha256": "A193A5ED29D8E1D6CB50597013709980096E90F39E10801A1C805514D681D478",
+      "size": 27305
+    },
+    {
+      "name": "aiterm.ps1",
+      "sha256": "B575DC6DA2D70760822E1857EA60320C731AD1EF961EFF0B3C647BFC6379B0ED",
+      "size": 15205
+    },
+    {
+      "name": "wsl.ps1",
+      "sha256": "1E3DCFE8F13DD88C7E2D21ED577D6BF2296740B60B39E2816EB2AF8E3073F219",
+      "size": 3566
+    },
+    {
+      "name": "restore-point.ps1",
+      "sha256": "F2A4CE02F94908D09D1D9DB358669894782323000BF1C4E927A4FFED7087752D",
+      "size": 3496
+    },
+    {
+      "name": "repair.ps1",
+      "sha256": "70B9F1990CA00494BB98A58650AB14C696434D5BCFEADACEAD951A305045F282",
+      "size": 7575
+    },
+    {
+      "name": "components.ps1",
+      "sha256": "CBC76CC125026BBFE60328C9EEAF29D745B14E4478DC33B4F36BBB514A6ED431",
+      "size": 3938
+    },
+    {
+      "name": "telemetry-services.ps1",
+      "sha256": "7C0A0D0C81CE3CB2B5D9A79CDC58D3EBFF68FC11EE08E5CF0DCD40B1EE265EF5",
+      "size": 6958
+    },
+    {
+      "name": "classic-panels.ps1",
+      "sha256": "447AE8E3F005FAD6D41175B483C5CEC1FF2E711F89F5E76F0ED022C593B9F3A5",
+      "size": 2864
+    },
+    {
+      "name": "devtools.ps1",
+      "sha256": "F16651108D7F361C33B5E74D133A06BF53DDC1E978ECB9AAB3C43038777CBA0F",
+      "size": 20676
+    },
+    {
+      "name": "builtin-apps.ps1",
+      "sha256": "00330CFAFCF78729734C5FD13BFF89CB5FD1DFA7F2374F264453F434B92BA2C3",
+      "size": 9602
+    },
+    {
+      "name": "esign-programs.ps1",
+      "sha256": "4635BC63B99404CFDA641658C04A19C811CC73938411F0B6D4EE99954ACD6220",
+      "size": 8428
+    },
+    {
+      "name": "programs-transfer.ps1",
+      "sha256": "AE45BAC61517E9B9629F5B8406A04F34DA399661954C44F5E9ED5A4D9507740C",
+      "size": 5436
+    },
+    {
+      "name": "certs.ps1",
+      "sha256": "0249AC37BCE6E95B517D210EF1D61B15921FF2EF91717CC84039B7B5DC0EABEF",
+      "size": 34986
+    },
+    {
+      "name": "strings.ps1",
+      "sha256": "AE8E6DCF4D58EC866448497B9772D4294A6471CF93C2761AA3EAF629925F564B",
+      "size": 71854
+    },
+    {
+      "name": "yandex-net.ps1",
+      "sha256": "0DCEF49C71C3DD713E23CD6AEF4108BE190F1682BC018DC16AAD8D5106231C0D",
+      "size": 93069
+    },
+    {
+      "name": "browser-family.ps1",
+      "sha256": "21957DF303400385A29E7F6383E110924411417F261385B1294A6B6B53D3E6C1",
+      "size": 12204
+    },
+    {
+      "name": "yandex-browser.ps1",
+      "sha256": "C456119E90637F0299FDBF5C759FBBE387247801CF2D690BBB232ACEC9400241",
+      "size": 30281
+    },
+    {
+      "name": "chromium-gost.ps1",
+      "sha256": "88390689ABA77BE95DC28598138B4C9578D966F6DBDEE9FE02B61C27EDE6DFBB",
+      "size": 12159
+    },
+    {
+      "name": "firefox-addons.ps1",
+      "sha256": "1366D4AD3129F141C4DBFD9529420A01AC8C8BC26FCEC6AD54A72115CFFBD2CF",
+      "size": 18265
+    },
+    {
+      "name": "settings.json",
+      "sha256": "E13D80F8EAFB4C79C2C94A22C62465223746DE3800686E05E5B01F59A932C8B9",
+      "size": 305312
+    },
+    {
+      "name": "claude.omp.json",
+      "sha256": "28E0793BE5A10DD37D2570AF35D5B3AD7044B2A763C405A18133881A604E6C81",
+      "size": 11271
+    },
+    {
+      "name": "statusline-omp.py",
+      "sha256": "A3772424551BCF527DF0C8D6F77302075FB3FB2A3DAFD002777EB61195FA6EED",
+      "size": 6095
+    },
+    {
+      "name": "statusline-command.py",
+      "sha256": "AC9A5F08B4781CD1C7D7ADA7343889CC0E794116963922E54E7932182359F9DA",
+      "size": 10854
+    },
+    {
+      "name": "autosettings.profile.ps1",
+      "sha256": "4C5574ED8872FC755B95A3A636E16D4FDD669269A5BA6D8E3DF947632F36CA6C",
+      "size": 7246
+    },
+    {
+      "name": "kontur-certs.json",
+      "sha256": "807E1B45315050B34DD888384E19C872141CFADD54A69AB660E3888648CDA32E",
+      "size": 284645
+    },
+    {
+      "name": "yandex-browser-policies.json",
+      "sha256": "E276418C80E3F754C689BB08D9CC332EACCBA2CBD1C1A408D11A68D267AABAA7",
+      "size": 2796585
+    }
+  ],
+  "payloads": [
+    {
+      "name": "YandexBrowser.msi",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "26.8.1.1087",
+      "sha256": "51B0019F520B85D2B5AB7414DA59ED2B7423156D6C21DBF2ED193BC797B91F2E",
+      "size": 208171008,
+      "urls": [
+        "https://browser-corp-data.s3.yandex.net/installers/51256bc3-8d50-4cce-914d-e768dd86d202/YandexBrowser.msi"
+      ]
+    },
+    {
+      "name": "chromium-gost",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "152.0.7977.149",
+      "sha256": "561F6816E63A46053BB82F67D35B57AF780B47A253B79E4BAD7A9B606B1ED3B8",
+      "size": 125645824,
+      "urls": [
+        "https://win-pc.autosettings.win/p/561f6816e63a/chromium-gost-152.0.7977.149-windows-amd64-installer.exe"
+      ]
+    },
+    {
+      "name": "chromium-gost",
+      "arch": "arm64",
+      "machine": "arm64",
+      "version": "152.0.7977.149",
+      "sha256": "87B3EEAC970AE8277FA87D7A1BD5FE09D724CDD4B04963568A638C5973B598E4",
+      "size": 130529280,
+      "urls": [
+        "https://win-pc.autosettings.win/p/87b3eeac970a/chromium-gost-152.0.7977.149-windows-arm64-installer.exe"
+      ]
+    },
+    {
+      "name": "chromium-gost-portable",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "152.0.7977.149",
+      "sha256": "D9B6AAF76AD766F906B1F208C6F454F54528271AA482DB7AFF53A4411FCC8A59",
+      "size": 196575958,
+      "urls": [
+        "https://win-pc.autosettings.win/p/d9b6aaf76ad7/chromium-gost-152.0.7977.149-windows-amd64-portable.zip"
+      ]
+    },
+    {
+      "name": "chromium-gost-portable",
+      "arch": "arm64",
+      "machine": "arm64",
+      "version": "152.0.7977.149",
+      "sha256": "3DAED8897C2DCB238295E7E23265A6F52F426155381D4B9A419607B8BF899883",
+      "size": 190093753,
+      "urls": [
+        "https://win-pc.autosettings.win/p/3daed8897c2d/chromium-gost-152.0.7977.149-windows-arm64-portable.zip"
+      ]
+    }
+  ],
+  "modules": []
+}
