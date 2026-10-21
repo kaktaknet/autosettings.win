@@ -12,12 +12,15 @@ irm https://get.autosettings.win | iex
 
 Ничего не устанавливается и не запускается без твоего выбора. Каждое действие показано на экране до того, как оно выполнится.
 
-**Что есть в меню**
+**Что есть в меню - семь разделов**
 
-- приватность: телеметрия, реклама и рекомендации Windows;
-- удобный терминал: строка приглашения, шрифт, значки файлов;
-- терминал для работы с ИИ;
-- сеть, сертификаты и инструменты разработчика.
+1. Быстрая настройка - готовые наборы настроек.
+2. Приватность и реклама - сбор данных, реклама, ИИ в Windows, доступ приложений, браузеры.
+3. Windows: работа и вид - поиск, Проводник, панель задач, окна, игры, обновления, «Починить Windows», компоненты, виды папок, поиск вредных правок чужих «оптимизаторов».
+4. Электронная подпись и госуслуги - сертификаты удостоверяющих центров, КриптоПро, Рутокен и другие программы с проверкой подписи производителя.
+5. Интернет и сеть - DNS, поиск Яндекса, выбор DNS-провайдера, удалённый помощник.
+6. Для разработчика - терминал, Git и VS Code, WSL, ИИ-агенты (Claude Code, Codex, Gemini CLI и другие) и их настройка.
+7. Программы - браузеры, документы, связь, утилиты, игры, VPN-клиенты и перенос программ на другой компьютер. Всё ставится через winget из официального каталога.
 
 **Что лежит в этом репозитории**
 
@@ -50,12 +53,15 @@ irm https://get.autosettings.win | iex
 
 Nothing is installed or run without your choice. Every action is shown on screen before it happens.
 
-**What the menu offers**
+**What the menu offers - seven sections**
 
-- privacy: Windows telemetry, ads and suggestions;
-- a comfortable terminal: prompt, font, file icons;
-- a terminal set up for work with AI;
-- network, certificates and developer tools.
+1. Quick setup - ready-made sets of settings.
+2. Privacy and ads - data collection, ads, AI in Windows, app permissions, browsers.
+3. Windows: behavior and look - search, File Explorer, taskbar, windows, gaming, updates, "Repair Windows", Windows features, folder views, a scan for harmful tweaks left by other "optimizers".
+4. E-signature and government services - certificate authority certificates, CryptoPro, Rutoken and other programs with the vendor signature checked.
+5. Internet and network - DNS, Yandex search, a DNS provider of your choice, Remote Assistance.
+6. For developers - terminal, Git and VS Code, WSL, AI agents (Claude Code, Codex, Gemini CLI and more) and their setup.
+7. Programs - browsers, documents, messaging, utilities, games, VPN clients and moving your programs to another PC. Everything installs through winget from the official catalog.
 
 **What is in this repository**
 
