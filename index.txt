@@ -25,7 +25,8 @@
     $base    = 'https://get.autosettings.win'
     $distant = @(
         'https://cf.autosettings.win',
-        'https://raw.githubusercontent.com/kaktaknet/autosettings.win/main'
+        'https://raw.githubusercontent.com/kaktaknet/autosettings.win/main',
+        'https://gitlab.com/kaktaknet/autosettings.win/-/raw/main'
     )
     $stores  = @(
         'https://win-pc.autosettings.win',
@@ -40,8 +41,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = '535784b99eb2'
-    $pinned  = '535784B99EB2B7CF82E7219C14B2B25CB414579114456521D28DEAAC5FF62F81'
+    $release = 'f341c18af8db'
+    $pinned  = 'F341C18AF8DB77E52F49B37AC4A7A8C007EF07781D15DC7CF71FF3E23568799F'
 
     function Fail([string]$Message) {
         Write-Host ''
@@ -186,6 +187,6 @@
     $own = $null
     try { $own = (Get-Process -Id $PID -ErrorAction Stop).Path } catch {}
     $hostExe = Get-MenuHost $own ([Environment]::Is64BitOperatingSystem) ([Environment]::Is64BitProcess) $env:SystemRoot
-    & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $dir $manifest.entry) $pinned
+    & $hostExe -NoProfile -ExecutionPolicy Bypass -File (Join-Path $dir $manifest.entry) $pinned @args
     Remove-Item -Path $dir -Recurse -Force -ErrorAction SilentlyContinue
-}
+} @args
