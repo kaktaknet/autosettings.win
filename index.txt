@@ -9,6 +9,9 @@
 #               GitHub repository (github.com/kaktaknet/autosettings.win), all listed below. The same
 #               bytes lie on every host; each file is checked against a pinned SHA-256 (below) before
 #               it is used, so no host is trusted. No data is sent out, ever.
+# dns:          The autosettings.win zone is DNSSEC-signed (ECDSA P-256, DS record published in .win), so
+#               a validating resolver rejects a forged answer for autosettings.win and get.autosettings.win.
+#               Safety does not rest on DNS alone: every file is still checked against the pinned SHA-256.
 # elevation:    This loader and the menu run as the normal user - NOT elevated. Standard Windows UAC
 #               is requested per action, only when a machine-wide (HKLM) policy is written or reverted,
 #               with the user consenting. User-only tweaks (HKCU) and the terminal/AI cosmetics need no
