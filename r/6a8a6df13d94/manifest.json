@@ -1,0 +1,263 @@
+{
+  "entry": "menu.ps1",
+  "files": [
+    {
+      "name": "menu.ps1",
+      "sha256": "E1DDEDDB3860C2A06FD7FEFE6C8B30D07D0FC3D4C1175CA6BD7CDEB5927F1ACE",
+      "size": 23559
+    },
+    {
+      "name": "lib.ps1",
+      "sha256": "2AF55AD03D617ACB6D99461D1DE9BC5E044EF924392C07FD14FEC3A5638797AB",
+      "size": 53972
+    },
+    {
+      "name": "hklm-helper.ps1",
+      "sha256": "4868ED22D75525FED9017CFF8B3965BAE40B62E562264B3E7B6A28B52FC443D1",
+      "size": 22255
+    },
+    {
+      "name": "ui.ps1",
+      "sha256": "915070ACF478D6498407262423BB6B73C5563602263082C834B82D7E27159258",
+      "size": 6092
+    },
+    {
+      "name": "terminal.ps1",
+      "sha256": "17738B929083FF9F9C180597A7826B032D03D84EB8E01A5078F6296CA60A2725",
+      "size": 28402
+    },
+    {
+      "name": "aiterm.ps1",
+      "sha256": "EA9D50D3E2115B9529C347C1F9FAE706896134AA443A9502973DC2C43D245877",
+      "size": 48065
+    },
+    {
+      "name": "wsl.ps1",
+      "sha256": "63F6770FC46FDC75DC5AF6263793918CA41DBB633CC46C76797230F5A23E9B7C",
+      "size": 6541
+    },
+    {
+      "name": "restore-point.ps1",
+      "sha256": "F2A4CE02F94908D09D1D9DB358669894782323000BF1C4E927A4FFED7087752D",
+      "size": 3496
+    },
+    {
+      "name": "repair.ps1",
+      "sha256": "65033AC50FD9EE354DE005849F390B7E55B6C2695A1B17B837557FE2E6C07A28",
+      "size": 8189
+    },
+    {
+      "name": "components.ps1",
+      "sha256": "7E4687CB346FCACD461ED87C1CBA07FEE0ADC3D03B6EB92FC188BD4CEC48D108",
+      "size": 4619
+    },
+    {
+      "name": "telemetry-services.ps1",
+      "sha256": "7C0A0D0C81CE3CB2B5D9A79CDC58D3EBFF68FC11EE08E5CF0DCD40B1EE265EF5",
+      "size": 6958
+    },
+    {
+      "name": "classic-panels.ps1",
+      "sha256": "447AE8E3F005FAD6D41175B483C5CEC1FF2E711F89F5E76F0ED022C593B9F3A5",
+      "size": 2864
+    },
+    {
+      "name": "folder-views.ps1",
+      "sha256": "9B135990942C99E36C455DD70C7D2700B66FC851C3FD8F1676A6774446DF646A",
+      "size": 8286
+    },
+    {
+      "name": "harmful-scan.ps1",
+      "sha256": "30E3A3D5F7DD61BB2D4B5E64BA89D9892BA38D00155DCC23B986B3912576363F",
+      "size": 17154
+    },
+    {
+      "name": "sound-power.ps1",
+      "sha256": "BE17C6970EBEA97BFFF28E4A37F500E5529ECD7FC43C512FF8EF2BA31F9BAA02",
+      "size": 14238
+    },
+    {
+      "name": "devtools.ps1",
+      "sha256": "0283C80C0F15431F542F47F906E8B56D93E95E38E549CC581781ADEA2A6B3DA0",
+      "size": 26924
+    },
+    {
+      "name": "dev-setup.ps1",
+      "sha256": "FDD7830E1BE8D30D7E8FEA1A2DDF827CEC6920430E4DD9CB751E802F1CD34A27",
+      "size": 15451
+    },
+    {
+      "name": "builtin-apps.ps1",
+      "sha256": "00330CFAFCF78729734C5FD13BFF89CB5FD1DFA7F2374F264453F434B92BA2C3",
+      "size": 9602
+    },
+    {
+      "name": "esign-programs.ps1",
+      "sha256": "FABA452A1E94F4B462594F2F43F4E7067FEBE019E9DA5745653F991371050F71",
+      "size": 9253
+    },
+    {
+      "name": "programs-transfer.ps1",
+      "sha256": "AE45BAC61517E9B9629F5B8406A04F34DA399661954C44F5E9ED5A4D9507740C",
+      "size": 5436
+    },
+    {
+      "name": "settings-transfer.ps1",
+      "sha256": "65395FF59101E05E91A2FA6F1ABFD2346502490BAB0CD2187FB8034A8882E99D",
+      "size": 8612
+    },
+    {
+      "name": "rst-usb.ps1",
+      "sha256": "6615BAC76D3DDCF025B2DA92B62847ADEC6BE7854B6D6BD4DA30177E4F994901",
+      "size": 6967
+    },
+    {
+      "name": "pc-info.ps1",
+      "sha256": "D22FF9002C4214233BFB690386EBBF0832C20848B168519AB8B0B8A9D1309319",
+      "size": 5297
+    },
+    {
+      "name": "readability.ps1",
+      "sha256": "3BCE9FA5209331AE1115EFA01D96FD571BCD08EFE6C6861C332C12028AF9A008",
+      "size": 7715
+    },
+    {
+      "name": "certs.ps1",
+      "sha256": "0936B4AE83638BCAE66CB24C42AFC5CF2D41550133CE19C4BA72EB7D8CE87FFE",
+      "size": 34946
+    },
+    {
+      "name": "strings.ps1",
+      "sha256": "A57CAB4FF216820F7917A0C54D841036A84665DCB44F81561D5EFDD5C4DB1177",
+      "size": 129369
+    },
+    {
+      "name": "yandex-net.ps1",
+      "sha256": "CD457C210F77C4EEF2FA5CDAEA0B6D379B1D359FEBA28B3DF77AA0D84D96F70B",
+      "size": 96178
+    },
+    {
+      "name": "browser-family.ps1",
+      "sha256": "086BCCF03D262EF7F2BB95362050680A3FD51A13A35A1B700F891E5C80C06F7F",
+      "size": 14668
+    },
+    {
+      "name": "yandex-browser.ps1",
+      "sha256": "4EB6C84FD92D81F1AFA1AD532A1F3E24D51D3870694DB11E177E5D73C1EB1D24",
+      "size": 31763
+    },
+    {
+      "name": "chromium-gost.ps1",
+      "sha256": "356EDA4F4998BEA4B67AC8DEAE37C9D2FD7D9EE533B2F5E6675441AA1ACCFDD1",
+      "size": 12175
+    },
+    {
+      "name": "firefox-addons.ps1",
+      "sha256": "0A9389CE0A2A5147E9798051549B8ED3B50F64C22A06570E99D8264EB30C0D4A",
+      "size": 23050
+    },
+    {
+      "name": "settings.json",
+      "sha256": "FAC3155BDE125FB341875FC4D2943B9B20558B2D727813643C4E416CF93943EC",
+      "size": 374842
+    },
+    {
+      "name": "claude.omp.json",
+      "sha256": "28E0793BE5A10DD37D2570AF35D5B3AD7044B2A763C405A18133881A604E6C81",
+      "size": 11271
+    },
+    {
+      "name": "statusline-omp.py",
+      "sha256": "A3772424551BCF527DF0C8D6F77302075FB3FB2A3DAFD002777EB61195FA6EED",
+      "size": 6095
+    },
+    {
+      "name": "statusline-command.py",
+      "sha256": "AC9A5F08B4781CD1C7D7ADA7343889CC0E794116963922E54E7932182359F9DA",
+      "size": 10854
+    },
+    {
+      "name": "autosettings.profile.ps1",
+      "sha256": "2063F341BDE9F145CCC54F2B5A8210377B2344DD6AABD2747FF968020B9CE7E5",
+      "size": 7806
+    },
+    {
+      "name": "autosettings.tmTheme",
+      "sha256": "1E198A9DB2A6D669728FFFBA10A8B4695AEEE5A313EA06E9E4E27AFBCCBCCC88",
+      "size": 3809
+    },
+    {
+      "name": "copilot.omp.json",
+      "sha256": "3A70AFD00A8343F6C6CFE04DFBA2766FB7C5A0519D3987E5666C40BB565F589D",
+      "size": 5451
+    },
+    {
+      "name": "kontur-certs.json",
+      "sha256": "807E1B45315050B34DD888384E19C872141CFADD54A69AB660E3888648CDA32E",
+      "size": 284645
+    },
+    {
+      "name": "yandex-browser-policies.json",
+      "sha256": "E276418C80E3F754C689BB08D9CC332EACCBA2CBD1C1A408D11A68D267AABAA7",
+      "size": 2796585
+    }
+  ],
+  "payloads": [
+    {
+      "name": "YandexBrowser.msi",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "26.8.1.1087",
+      "sha256": "51B0019F520B85D2B5AB7414DA59ED2B7423156D6C21DBF2ED193BC797B91F2E",
+      "size": 208171008,
+      "urls": [
+        "https://browser-corp-data.s3.yandex.net/installers/51256bc3-8d50-4cce-914d-e768dd86d202/YandexBrowser.msi"
+      ]
+    },
+    {
+      "name": "chromium-gost",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "156.0.8078.48",
+      "sha256": "49D17370F80B2B7148D36D4A482D8C93DDD210BB90C4EA477ED4049442D616C8",
+      "size": 130718720,
+      "urls": [
+        "https://win-pc.autosettings.win/p/49d17370f80b/chromium-gost-156.0.8078.48-windows-amd64-installer.exe"
+      ]
+    },
+    {
+      "name": "chromium-gost",
+      "arch": "arm64",
+      "machine": "arm64",
+      "version": "156.0.8078.48",
+      "sha256": "ADF06441902CDDE7176B0C08490FA2A6F7C8F5AA48DF4CDBE4BB7BE1EB517D62",
+      "size": 135348736,
+      "urls": [
+        "https://win-pc.autosettings.win/p/adf06441902c/chromium-gost-156.0.8078.48-windows-arm64-installer.exe"
+      ]
+    },
+    {
+      "name": "chromium-gost-portable",
+      "arch": "x64",
+      "machine": "x64",
+      "version": "156.0.8078.48",
+      "sha256": "8EE4F06BF2326B7C88A031716B4762BF5698DD62ECB58416F34979094143D774",
+      "size": 202992296,
+      "urls": [
+        "https://win-pc.autosettings.win/p/8ee4f06bf232/chromium-gost-156.0.8078.48-windows-amd64-portable.zip"
+      ]
+    },
+    {
+      "name": "chromium-gost-portable",
+      "arch": "arm64",
+      "machine": "arm64",
+      "version": "156.0.8078.48",
+      "sha256": "2884D3907033F8ED893E3D5B8D5C914EB73C3CBCE0C48AA08D74F4A3A9B21452",
+      "size": 196357431,
+      "urls": [
+        "https://win-pc.autosettings.win/p/2884d3907033/chromium-gost-156.0.8078.48-windows-arm64-portable.zip"
+      ]
+    }
+  ],
+  "modules": []
+}
