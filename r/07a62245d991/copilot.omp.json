@@ -1,0 +1,165 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "final_space": false,
+  "palette": {
+    "frame": "#21c7c7",
+    "white": "#ffffff",
+    "ink": "#011627",
+    "dim": "#9aa5ab",
+    "pill": "#303030",
+    "track": "#6b6b6b",
+    "blue": "#0077c2",
+    "orange": "#FF9248",
+    "yellow": "#FFFB38",
+    "paleyellow": "#ffeb95",
+    "green": "#c5e478",
+    "red": "#ef5350",
+    "violet": "#C792EA",
+    "purple": "#83769c",
+    "cyan": "#40c4ff",
+    "grey": "#b2bec3",
+    "navy": "#306998",
+    "gold": "#FFE873",
+    "slate": "#1e293b",
+    "royal": "#316ce4",
+    "as1": "#2b2440",
+    "as2": "#3a3156",
+    "as3": "#4a3f6b",
+    "astext": "#d9d3e8"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "diamond",
+          "leading_diamond": "<p:frame,transparent>╭─</>",
+          "trailing_diamond": "",
+          "foreground": "p:astext",
+          "background": "p:as1",
+          "template": " Auto"
+        },
+        {
+          "type": "text",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "foreground": "p:astext",
+          "background": "p:as2",
+          "template": "Settings"
+        },
+        {
+          "type": "text",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "foreground": "p:astext",
+          "background": "p:as3",
+          "template": ".win "
+        },
+        {
+          "type": "copilot_cli",
+          "style": "diamond",
+          "leading_diamond": "",
+          "foreground": "p:white",
+          "background": "p:blue",
+          "template": " 󰯉 {{ .Model.DisplayName }} "
+        },
+        {
+          "type": "copilot_cli",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:ink",
+          "background": "p:green",
+          "background_templates": [
+            "{{ if ge .TokenUsagePercent 80 }}p:red{{ end }}",
+            "{{ if ge .TokenUsagePercent 50 }}p:paleyellow{{ end }}"
+          ],
+          "options": {
+            "gauge_marked_char": "▰",
+            "gauge_unmarked_char": "▱"
+          },
+          "template": " {{ $n := div (int .TokenUsagePercent) 10 }}{{ repeat (int $n) \"▰\" }}<p:white>{{ repeat (int (sub 10 $n)) \"▰\" }}</> {{ .TokenUsagePercent }}% {{ if ge .TokenUsagePercent 90 }}󰂃{{ else if ge .TokenUsagePercent 70 }}󰁻{{ else if ge .TokenUsagePercent 50 }}󰁽{{ else if ge .TokenUsagePercent 30 }}󰁿{{ else if ge .TokenUsagePercent 10 }}󰂁{{ else }}󰁹{{ end }} "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:ink",
+          "background": "p:orange",
+          "options": {
+            "style": "folder"
+          },
+          "template": "  {{ .Path }} "
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:ink",
+          "background": "p:yellow",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:paleyellow{{ end }}"
+          ],
+          "options": {
+            "fetch_status": true,
+            "branch_icon": " "
+          },
+          "template": " {{ .HEAD }}{{ if .Staging.Changed }} +{{ add .Staging.Added .Staging.Modified .Staging.Deleted .Staging.Unmerged }}{{ end }}{{ if .Working.Changed }} ~{{ add .Working.Added .Working.Modified .Working.Deleted .Working.Unmerged .Working.Untracked }}{{ end }} "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:frame",
+          "template": "╰─"
+        },
+        {
+          "type": "copilot_cli",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": " ",
+          "foreground": "p:white",
+          "background": "p:pill",
+          "template": " {{ .FormattedTokens }} <p:dim>↑</>{{ div .ContextWindow.TotalInputTokens 1000 }}k <p:dim>↓</>{{ div .ContextWindow.TotalOutputTokens 1000 }}k"
+        },
+        {
+          "type": "copilot_cli",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": " ",
+          "foreground": "p:gold",
+          "background": "p:pill",
+          "template": "{{ if gt .Cost.TotalPremiumRequests 0 }}  {{ .Cost.TotalPremiumRequests }}{{ end }}"
+        },
+        {
+          "type": "copilot_cli",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": " ",
+          "foreground": "p:white",
+          "background": "p:pill",
+          "template": "{{ if or .Cost.TotalLinesAdded .Cost.TotalLinesRemoved }}<p:green>+{{ .Cost.TotalLinesAdded }}</> <p:red>-{{ .Cost.TotalLinesRemoved }}</>{{ end }}"
+        },
+        {
+          "type": "copilot_cli",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "foreground": "p:ink",
+          "background": "p:cyan",
+          "template": "{{ if gt (int .Cost.TotalDurationMS) 0 }}  {{ .FormattedDuration }}{{ end }}"
+        }
+      ]
+    }
+  ]
+}
