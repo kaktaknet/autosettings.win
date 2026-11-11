@@ -44,8 +44,8 @@
     foreach ($store in ($distant | Sort-Object { Get-Random })) { [void]$mirrors.Add($store) }
     [void]$mirrors.Add($base)
     $problems = New-Object Collections.ArrayList
-    $release = '8059ef8c595c'
-    $pinned  = '8059EF8C595CA805DAD09AA7583A0ACDF7AEF27D468EFE75CAFF643341D5A092'
+    $release = '12a17ca8bf4c'
+    $pinned  = '12A17CA8BF4C3AE83042373D385B7F5DFBB5D0F5AE1A41495A95ACCEA61E6077'
 
     function Fail([string]$Message) {
         Write-Host ''
